@@ -1,0 +1,324 @@
+/* body */
+
+body{
+
+    position: relative;
+    font-family: sans-serif;
+    margin: 0;
+    background-color: whitesmoke;
+    box-shadow: 0 0 8px 8px inset grey;
+    min-width: 310px;
+
+}
+
+/* heading */
+
+#heading{
+
+    color: darkslategray;
+    text-shadow: 0 0 6px grey;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px 0;
+
+}
+
+/* show button */
+
+#hide-btn{
+
+    position: sticky;     
+    top: 10px;
+    left: 10px;       
+    color: whitesmoke;
+    outline: none;
+    border: 2px outset darkslategray;
+    border-radius: 20px;
+    background-color: grey;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5px 10px;    
+    margin: 5px;
+
+}
+
+/* select container */
+
+#select-container{
+
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: sticky;
+    top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;    
+    background-image: linear-gradient(to top right, whitesmoke, darkslategray);
+    border: 2px outset grey;
+    border-radius: 20px;  
+
+}
+
+/* select styling */
+
+.select-styling{
+    
+    margin: 5px;
+    padding: 5px;
+    width: 18%;
+    border: 2px inset darkslategray;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, grey, darkslategray, grey);
+    min-width: 150px;
+    
+}
+
+/* increasing the width of the select styling elements */
+
+@media only screen and (max-width: 400px){    
+
+    body .select-styling{
+        width: 90%;
+    }
+
+}
+
+/* space between styling */
+
+.space-between-styling{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* input styling */
+
+.input-styling{
+
+    border: 2px inset lightgrey;    
+    border-radius: 10px;    
+    padding: 0 5px;
+    outline: none;
+    color: darkslategray;
+    background-color: rgb(238, 234, 234);
+
+}
+
+/* label styling */
+
+.label-styling{
+    color: white;
+}
+
+/* rover list */
+
+#rover-list{
+
+    height: 25px;
+    width: 70%;
+
+}
+
+/* sol */
+
+#sol{
+
+    height: 25px;
+    width: 70%;
+
+}
+
+/* button styling */
+
+.button-styling{
+
+    color: darkslategray;
+    font-weight: bold;    
+    background-image: linear-gradient(to top right, rgb(148, 147, 147) 0%, lightgrey 20% , 
+    rgb(148, 147, 147) 50%, lightgrey 70%);
+    border: 2px outset whitesmoke;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+
+}
+
+.button-styling:hover{
+    box-shadow: 0 0 4px 4px whitesmoke;
+}
+
+/* get images button */
+
+#get-images{   
+    
+    font-size: 1rem;
+    padding: 8px 0;    
+
+}
+
+/* page */
+
+#page{
+
+    height: 25px;
+    width: 50%;
+
+}
+
+/* go button */
+
+#go{
+    height: 25px;
+}
+
+#go:hover{
+    box-shadow: 0 0 2px 2px whitesmoke;
+}
+
+/* left right container */
+
+#left-right-container{
+
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    cursor: default;
+    border-radius: 20px;
+
+}
+
+/* left right button */
+
+.left-right-btn{
+    cursor: pointer;    
+}
+
+/* page number */
+
+#page-number{
+
+    height: 30px;
+    width: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgb(238, 234, 234);
+    box-shadow: 0 0 4px 4px darkslategray;  
+    overflow-x: auto;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+
+}
+
+/* page number scrollbar */
+
+#page-number::-webkit-scrollbar{
+
+    height: 5px;
+    width: 5px;
+    
+}
+
+#page-number::-webkit-scrollbar-track{
+    border-radius: 5px;
+}
+
+#page-number::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+}
+
+/* images container */
+
+#images-container{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+/* images inside image container */
+
+#images-container img{
+
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 4px grey;
+
+}
+
+/* setting size pattern for different images of the images container */
+
+#images-container img:nth-child(5n-4){
+
+    height: 200px;
+    width: 200px;
+
+}
+
+#images-container img:nth-child(5n-3){
+
+    height: 200px;
+    width: 200px;
+
+}
+
+#images-container img:nth-child(5n-2){
+
+    height: 200px;
+    width: 200px;
+
+}
+
+#images-container img:nth-child(5n-1){
+
+    height: 275px;
+    width: 275px;
+
+}
+
+#images-container img:nth-child(5n){
+
+    height: 275px;
+    width: 275px;
+
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar{
+
+    height: 10px;
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track{    
+    background-color: lightgrey;    
+}
+
+::-webkit-scrollbar-thumb{
+
+    background-color: grey;
+    box-shadow: 0 0 2px 2px inset darkslategray;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: darkslategray;
+}

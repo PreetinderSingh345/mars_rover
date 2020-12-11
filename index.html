@@ -1,0 +1,129 @@
+<html>
+    <head>
+
+        <title>Mars Rover</title>
+
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <!-- above is the link to the external stylesheet -->
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <!-- above is the link to use font awesome CDN -->
+
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <!-- above is the link to use animate CDN -->
+
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <!-- meta tag for adjusting the content according to the device width -->
+
+    </head>
+
+    <body>       
+
+        <!-- heading -->
+        
+        <div id="heading">
+
+            <span>mars</span>
+            <i class="fas fa-rocket"></i>
+            <span>rover</span>        
+
+        </div>
+
+        <!-- show button -->
+
+        <button id="hide-btn">hide</button>
+
+        <!-- select container -->
+
+        <div id="select-container">
+
+            <!-- rover label list container -->
+
+            <div id="rover-label-list-container" class="select-styling space-between-styling">
+
+                <!-- rover label -->
+
+                <label id="rover-label" for="rover-list" class="label-styling">Rover</label>
+
+                <!-- rover list -->
+
+                <select id="rover-list" class="input-styling">                               
+
+                    <option value="Curiosity">Curiosity</option>
+                    <option value="Opportunity">Opportunity</option>
+                    <option value="Spirit">Spirit</option>
+
+                </select>
+
+            </div>
+
+            <!-- sol container -->
+
+            <div id="sol-container" class="select-styling space-between-styling">
+
+                <!-- sol label -->
+
+                <label id="sol-label" for="sol" class="label-styling">Sol</label>
+
+                <!-- sol -->
+
+                <input id="sol" type="number" placeholder="1 to 1000" value="1" class="input-styling"> 
+            
+            </div>
+
+            <!-- get images button -->
+
+            <button id="get-images" class="select-styling button-styling">Get Images</button>
+
+            <!-- page container -->
+                       
+            <div id="page-container" class="select-styling space-between-styling">
+
+                <!-- page label -->
+                
+                <label id="page-label" for="page" class="label-styling">Goto</label>
+
+                <!-- page -->
+
+                <input id="page" type="number" placeholder="Page..." value="1" class="input-styling">
+
+                <!-- go button -->
+
+                <button id="go" class="button-styling">Go</button>
+
+            </div>
+
+            <!-- left right container -->
+
+            <div id="left-right-container" class="select-styling button-styling">
+
+                <!-- previous button -->
+
+                <i id="prev-btn" class="fas fa-angle-double-left left-right-btn"></i>
+
+                <!-- page number -->
+
+                <span id="page-number">1</span>
+
+                <!-- next button -->
+
+                <i id="next-btn" class="fas fa-angle-double-right left-right-btn"></i>
+
+            </div>
+
+        </div>
+
+        <!-- images container -->
+
+        <div id="images-container">
+
+        </div>
+
+        <script type="text/javascript" src="./script.js"></script>
+        <!-- above is the link to the external js file -->
+
+    </body>
+</html>
